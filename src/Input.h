@@ -56,7 +56,7 @@ class Input : public CommandLine
       /*Inherited Virtual Methods*/
       bool execute(int fDesrcripIn, int FDescripOut)
       {
-         argList.back()->execute(0,1);
+         return argList.back()->execute(0,1);
       };	
 };
 

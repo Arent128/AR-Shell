@@ -43,9 +43,9 @@ class Connector : public CommandLine
    };
    Connector(int depth) {this->depth = depth;};
    /*Inherited virtual function from CommandLine.h*/
-   bool execute()
+   bool execute(int fdIn, int fdOut)
    {
-
+       return false;
    };
 	
    //Virtual Void for the commandline input of left and right children
@@ -57,7 +57,7 @@ class Connector : public CommandLine
    std::string getOutFileName() {return outFileName;};
    std::string getInFileName() {return inFileName;};
    int getDepth() {return depth;};
-   int setDepth(int depth) {this->depth = depth;};
+   int setDepth(int depth) {this->depth = depth; return 0;};
 };
 
 #endif
