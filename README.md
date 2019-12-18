@@ -7,17 +7,25 @@ By following the installation set of instruction, you will be able to access and
 
 Perform git clone command to clone the repository project onto your host
 ```
-$ git clone https://github.com/Arent/AR-Shell.git
+$ git clone --recurse-submodules https://github.com/Arent/AR-Shell.git
 ```
 Following the previous step, change directories into the folder where the program executable is at
 ```
 $ cd AR-Shell
 ```
-Run the executable program that was created after the previous step
+Create the executables for the project by running cmake.
+```
+$ cmake CMakeLists.txt
+$ make
+```
+Run the executable program that was created after the previous step.
 ```
 $ ./ARshell
 ```
-
+While in the shell type exit as follows to exit the shell.
+```
+$ exit
+```
 ### Test
 By executing the test program, this provides a series of test with multiple and various inputs. 
 ```
